@@ -2,7 +2,7 @@
 
 ## **INTRODUCTION**
 
-The introduction section serves as a foundation for understanding the Student Certificate Management System (SACMS) and its underlying goals and technologies. This section will provide an overview of the project, its objectives, the technologies employed in both front-end and back-end development, as well as the purpose and significance of the system.
+The introduction section serves as a foundation for understanding the Student Certificate Management System (SCMS) and its underlying goals and technologies. This section will provide an overview of the project, its objectives, the technologies employed in both front-end and back-end development, as well as the purpose and significance of the system.
 
 ### **2.1 Project Overview**
 The Student Certificate Management System (SCMS) is a robust web application meticulously developed to streamline the process of recognizing and showcasing student achievements and certificates within a classroom setting. This application serves as a centralized platform for administrators, teachers, and students to interact and share educational milestones in a user-friendly and organized manner.
@@ -70,15 +70,6 @@ SCMS leverages a selected set of front-end and back-end technologies for optimal
 ## CONCLUSION
 
 The purpose of implementing the Student Management System is to revolutionize the management of educational accomplishments within academic institutions. By utilizing a technology stack of HTML, CSS, JavaScript, PHP, and MySQL, SAMS creates a seamless experience for administrators, teachers, and students, promoting collaboration and a culture of achievement and provie easy to verification of fake certificates provided by students when requested by teachers and admins using comparing real certificates data.
-
-
-
-
-
-
-
-
-
 
 
 
