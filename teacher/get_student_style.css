@@ -1,0 +1,58 @@
+/* style.css */
+
+.student-details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.student-details-table th, .student-details-table td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+}
+
+.student-details-table th {
+    background-color: #f2f2f2;
+}
+
+.student-details-table td img {
+    max-width: 100px; /* Adjust the maximum width of the image */
+    max-height: 100px; /* Adjust the maximum height of the image */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+.student-details-table td {
+    text-align: center;
+}
+
+.student-details-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.student-details-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+.student-details-table td img {
+    max-width: 100px; /* Adjust the maximum width of the image */
+    max-height: 100px; /* Adjust the maximum height of the image */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+/* Add this CSS to your style.css file */
+
+.close {
+    position: absolute;
+    top: 100px;
+    right: 500px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.close:hover {
+    color: #ff0000; /* Change the color on hover if desired */
+}
