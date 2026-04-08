@@ -1,0 +1,29 @@
+RewriteEngine On
+RewriteBase /Student-Achievement-System/
+
+# -------------------------------------------------------------------
+# PART 1: FORCE CLEAN URLS (Redirects .php or .html to clean version)
+# -------------------------------------------------------------------
+
+# If someone requests a .php file directly, redirect them to the clean URL
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# If someone requests an .html file directly, redirect them to the clean URL
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+RewriteRule ^ %1 [R=301,L]
+
+
+# -------------------------------------------------------------------
+# PART 2: SERVE THE FILES (Tells the server what file to actually load)
+# -------------------------------------------------------------------
+
+# If the request is NOT a directory (!-d) and the .php file exists (-f)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+# If the request is NOT a directory (!-d) and the .html file exists (-f)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
