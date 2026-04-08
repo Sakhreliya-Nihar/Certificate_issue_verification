@@ -1,0 +1,60 @@
+/* CSS for class-row */
+.class-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  /* CSS for class-block */
+  .class-block {
+    width: 45%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .class-block a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .class-block:hover {
+    background-color: #eee;
+  }
+  
+  .class-block i {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .class-info {
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .class-info h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .class-info p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #eee;
+    margin: 5px 0 0;
+  }
+  
+  .class-block a:hover {
+    text-decoration: none;
+  }
+  
