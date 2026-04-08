@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    width: 98vw;
+    height: 80vh;
+}
+.sidebar-toggle {
+    position: fixed;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.sidebar {
+    position: fixed;
+    width: 150px;
+    height: 80%;
+    border-right: 1px solid #fdfdfd;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    margin-left: 0;
+    margin-top: 4%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    transition: width 0.3s ease;
+}
+.sidebar.active {
+    width: 50px;
+}
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.sidebar-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.sidebar-username {
+    font-size: 20px;
+}
+.sidebar-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.sidebar-item a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.sidebar-item:hover a {
+    background-color: #444;
+}
+
+.active {
+    background-color: #ffffff;
+}
+
+.circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.circle:hover {
+    background-color: #65c0f9;
+}
+.circle a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    flex: 1;
+    padding: 100px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+}
+.header-title {
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #17b4f8;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.count-box {
+    background: linear-gradient(to right, #17b4f8, #87e6ef);
+    padding: 10px;
+    width: 50vw;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.count-icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.class-block{
+    padding: 10px;
+    width: 50vw;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.notice {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: linear-gradient(to right, #ffb347, #ffcc33);
+}
+.notice-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+.marquee {
+    font-weight: bold;
+    color: #0612fe;
+    text-align: center;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+} 
+
+/* Search Bar Styles */
+.search-container {
+    margin: 10px 0;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-container button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Export Button Styles */
+.export-container {
+    margin-top: 10px;
+}
+
+.export-container button {
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.export-container button:hover {
+    background-color: #218838;
+}
+
